@@ -1,7 +1,7 @@
-import React from 'react';
-import { useQuery, gql } from '@apollo/client';
-import { Layout, QueryResult } from '../components';
-import TrackDetail from '../components/track-detail';
+import React from "react";
+import { useQuery, gql } from "@apollo/client";
+import { Layout, QueryResult } from "../components";
+import TrackDetail from "../components/track-detail";
 
 /** GET_TRACK gql query to retrieve a specific track by its ID */
 export const GET_TRACK = gql`
@@ -15,13 +15,13 @@ export const GET_TRACK = gql`
         photo
       }
       thumbnail
-      length
+      durationInSeconds
       modulesCount
       numberOfViews
       modules {
         id
         title
-        length
+        durationInSeconds
       }
       description
     }
