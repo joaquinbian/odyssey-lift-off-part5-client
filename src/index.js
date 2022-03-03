@@ -7,6 +7,7 @@ import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 const client = new ApolloClient({
   uri: "https://catstronauts-graphql.herokuapp.com/",
   cache: new InMemoryCache(),
+  name: "catstronauts-web",
 });
 
 ReactDOM.render(
